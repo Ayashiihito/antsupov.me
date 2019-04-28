@@ -1,6 +1,13 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
+
+const StyledImg = styled(Img)`
+  border-radius: 50%;
+  min-width: 250px;
+  min-height: 250px;
+`;
 
 const Photo = () => (
   <StaticQuery
@@ -15,7 +22,9 @@ const Photo = () => (
         }
       }
     `}
-    render={data => <Img alt="me" fixed={data.photo.childImageSharp.fixed} />}
+    render={data => (
+      <StyledImg alt="me" fixed={data.photo.childImageSharp.fixed} />
+    )}
   />
 );
 export default Photo;
