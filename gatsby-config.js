@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vladimir's portfolio`,
-    description: ``,
+    description: `Web Developer Vladimir Antsupov`,
     author: `Vladimir Antsupov`,
   },
   plugins: [
@@ -22,17 +22,17 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Vladimir's portfolio`,
-    //     short_name: `portfolio`,
-    //     start_url: `/`,
-    //     background_color: `#392a2c`,
-    //     theme_color: `#392a2c`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/icon.png`, // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Vladimir's portfolio`,
+        short_name: `portfolio`,
+        start_url: `/`,
+        background_color: `#392a2c`,
+        theme_color: `#392a2c`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`,
+      },
+    },
   ],
 };

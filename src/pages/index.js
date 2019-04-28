@@ -9,7 +9,7 @@ import Portfolio from '../components/portfolio';
 
 const IndexPage = () => (
   <Layout>
-    <SEO keywords={[`Web Developer`, `react`, `full-stuck`]} />
+    <SEO title="Home" keywords={[`Web Developer`, `react`, `full-stuck`]} />
     <Hero />
     <Skills />
     <Portfolio />
