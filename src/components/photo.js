@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const StyledImg = styled(Img)`
   border-radius: 50%;
-  min-width: 250px;
-  min-height: 250px;
+  min-width: 220px;
+  min-height: 220px;
 `;
 
 const Photo = () => (
@@ -15,7 +15,7 @@ const Photo = () => (
       {
         photo: file(relativePath: { eq: "me.jpg" }) {
           childImageSharp {
-            fixed(width: 250, height: 250) {
+            fixed(width: 220, height: 220) {
               ...GatsbyImageSharpFixed
             }
           }

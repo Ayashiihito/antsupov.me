@@ -2,17 +2,22 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
 import Hero from '../components/hero';
-import Skills from '../components/skills';
-import Portfolio from '../components/portfolio';
+import SkillsContainer from '../components/skillsContainer';
+import WorksContainer from '../components/worksContainer';
+
+import skills from '../skills';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`Web Developer`, `react`, `full-stuck`]} />
+    <SEO
+      title="Home"
+      lang="ru"
+      keywords={[`Web Developer`, `react`, `full-stuck`]}
+    />
     <Hero />
-    <Skills />
-    <Portfolio />
+    <SkillsContainer skills={skills} />
+    <WorksContainer />
   </Layout>
 );
 

@@ -5,7 +5,7 @@ import Photo from './photo';
 import ButtonLink from './buttonLink';
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

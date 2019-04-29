@@ -1,6 +1,9 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled, {
+  ThemeProvider,
+  createGlobalStyle,
+} from 'styled-components/macro';
 
 import theme from '../theme';
 import './layout.css';
@@ -17,12 +20,25 @@ const SiteContainer = styled.div`
 `;
 
 const Footer = styled.footer`
-  height: 15rem;
   background: ${props => props.theme.primaryDark};
-  color: ${props => props.theme.primaryLight};
+  color: ${props => props.theme.secondaryLight};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  ul {
+    list-style-type: none;
+    a {
+      color: ${props => props.theme.primaryLight};
+    }
+  }
+`;
+
+// styled-components/macro won't work?...why tho
+const FooterContainer = styled.div`
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 960px;
 `;
 
 const Layout = ({ children }) => (
@@ -44,13 +60,26 @@ const Layout = ({ children }) => (
             <main>{children}</main>
           </SiteContainer>
           <Footer>
-            <h4>Связаться со мной:</h4>
-            <ul>
-              <li>GitHub</li>
-              <li>Email</li>
-              <li>3</li>
-            </ul>
-            <span>© {new Date().getFullYear()}, Built by me</span>
+            <FooterContainer>
+              <h3>Связаться со мной:</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/Ayashiihito">GitHub</a>
+                </li>
+                <li>
+                  <a href="mailto:antsupov.dev@gmail.com">Email</a>
+                </li>
+              </ul>
+            </FooterContainer>
+            <span
+              css={`
+                background: rgba(0, 0, 0, 0.4);
+                padding: 0.5rem 2rem;
+                width: 100%;
+              `}
+            >
+              © {new Date().getFullYear()} Vladimir Antsupov
+            </span>
           </Footer>
         </>
       </ThemeProvider>
