@@ -9,7 +9,7 @@ const Container = styled.div`
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: ${props => props.theme.shadow};
+  box-shadow: ${props => props.theme.shadowLight};
 `;
 
 const Name = styled.span`

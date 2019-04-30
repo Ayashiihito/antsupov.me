@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Photo from './photo';
-import ButtonLink from './buttonLink';
+import ButtonLink from '../common/buttonLink';
+import ButtonsContainer from '../common/buttonsContainer';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -23,16 +24,6 @@ const Header = styled.h1`
 `;
 const Text = styled.p`
   color: #333;
-`;
-const ButtonsContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  & > a {
-    margin-right: 1rem;
-  }
-  @media screen and (min-width: 1000px) {
-    justify-content: flex-start;
-  }
 `;
 const Hero = () => (
   <Container>

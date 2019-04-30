@@ -3,10 +3,8 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
-import SkillsContainer from '../components/skillsContainer';
-import WorksContainer from '../components/worksContainer';
-
-import skills from '../skills';
+import Skills from '../components/skills';
+import Works from '../components/works';
 
 const IndexPage = () => (
   <Layout>
@@ -16,8 +14,8 @@ const IndexPage = () => (
       keywords={[`Web Developer`, `react`, `full-stuck`]}
     />
     <Hero />
-    <SkillsContainer skills={skills} />
-    <WorksContainer />
+    <Skills />
+    <Works />
   </Layout>
 );
 
