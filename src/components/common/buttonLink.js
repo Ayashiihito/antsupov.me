@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ButtonLink = styled.a`
   background: ${props => props.theme.primaryDark};
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

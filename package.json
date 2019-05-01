@@ -24,6 +24,7 @@
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
     "typography": "^0.16.19",
+    "typography-theme-moraga": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {

@@ -18,14 +18,14 @@ const SkillsContainer = () => (
   <>
     <h2>Языки:</h2>
     <Container>
-      {skills.languages.map(lang => (
-        <Skill icon={lang.icon} name={lang.name} />
+      {skills.languages.map(({ name, icon }) => (
+        <Skill key={name} icon={icon} name={name} />
       ))}
     </Container>
     <h2>Технологии:</h2>
     <Container>
-      {skills.technologies.map(tech => (
-        <Skill icon={tech.icon} name={tech.name} />
+      {skills.technologies.map(({ name, icon }) => (
+        <Skill key={name} icon={icon} name={name} />
       ))}
     </Container>
   </>

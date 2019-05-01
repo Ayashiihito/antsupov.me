@@ -6,7 +6,7 @@ import styled, {
 } from 'styled-components/macro';
 
 import theme from '../theme';
-import './layout.css';
+// import './layout.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,7 +21,10 @@ const SiteContainer = styled.div`
 
 const Footer = styled.footer`
   background: ${props => props.theme.primaryDark};
-  color: ${props => props.theme.secondaryLight};
+  &,
+  & h3 {
+    color: ${props => props.theme.secondaryLight};
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +37,6 @@ const Footer = styled.footer`
   }
 `;
 
-// styled-components/macro won't work?...why tho
 const FooterContainer = styled.div`
   margin: 2rem 0;
   width: 100%;

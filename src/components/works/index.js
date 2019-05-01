@@ -6,13 +6,8 @@ import works from './works';
 const WorksContainer = () => (
   <>
     <h2>Работы:</h2>
-    {works.map(work => (
-      <Work
-        img={work.img}
-        name={work.name}
-        desc={work.desc}
-        stack={work.stack}
-      />
+    {works.map(({ name, img, desc, stack }) => (
+      <Work key={name} img={img} name={name} desc={desc} stack={stack} />
     ))}
   </>
 );
