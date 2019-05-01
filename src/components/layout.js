@@ -6,7 +6,6 @@ import styled, {
 } from 'styled-components/macro';
 
 import theme from '../theme';
-// import './layout.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
