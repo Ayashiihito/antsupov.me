@@ -2,10 +2,12 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-// Something has to be done about those static queries, code like this is too coupled
+// Something has to be done about those static queries, they look out of place here
 const works = [
   {
     name: 'Калькулятор расходов',
+    githubLink: 'https://github.com/Ayashiihito/mern-expenses-app',
+    projectLink: 'http://mern-expenses-calc.herokuapp.com',
     desc: 'Простой калькулятор расходов в стиле material.',
     stack: 'react, redux, material-ui, node, express, mongoose',
     img: (

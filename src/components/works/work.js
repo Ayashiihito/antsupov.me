@@ -28,28 +28,29 @@ const Container = styled.div`
   }
 `;
 
-const Work = ({ img, name, desc, stack }) => (
-  <Container>
-    {img}
-    <div>
-      <h2>{name}</h2>
-      <span>
-        {desc}
-        <br />
-        <b>{stack}</b>
-      </span>
-      <ButtonsContainer
-        css={`
-          margin: 1rem;
-        `}
-      >
-        <ButtonLink href="https://github.com/Ayashiihito">GitHub</ButtonLink>
-        <ButtonLink href="http://mern-expenses-calc.herokuapp.com">
-          Open
-        </ButtonLink>
-      </ButtonsContainer>
-    </div>
-  </Container>
-);
+const Work = props => {
+  const { name, img, desc, stack, githubLink, projectLink } = props.contents;
+  return (
+    <Container>
+      {img}
+      <div>
+        <h2>{name}</h2>
+        <span>
+          {desc}
+          <br />
+          <b>{stack}</b>
+        </span>
+        <ButtonsContainer
+          css={`
+            margin: 1rem;
+          `}
+        >
+          <ButtonLink href={githubLink}>GitHub</ButtonLink>
+          <ButtonLink href={projectLink}>Open</ButtonLink>
+        </ButtonsContainer>
+      </div>
+    </Container>
+  );
+};
 
 export default Work;
