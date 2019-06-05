@@ -20,11 +20,14 @@ const Name = styled.span`
   font-weight: bold;
 `;
 
-const Skill = ({ icon, name }) => (
-  <Container>
-    {icon}
-    <Name>{name}</Name>
-  </Container>
-);
+const Skill = props => {
+  const { icon, name } = props.contents;
+  return (
+    <Container>
+      {icon}
+      <Name>{name}</Name>
+    </Container>
+  );
+};
 
 export default Skill;
