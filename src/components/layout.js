@@ -68,7 +68,7 @@ const Layout = ({ children }) => (
                   <a href="https://github.com/Ayashiihito">GitHub</a>
                 </li>
                 <li>
-                  <a href="mailto:antsupov.dev@gmail.com">Email</a>
+                  <a href="mailto:antsupov.dev@gmail.com">antsupov.dev@gmail.com</a>
                 </li>
               </ul>
             </FooterContainer>

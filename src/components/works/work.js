@@ -15,17 +15,27 @@ const Container = styled.div`
   & > div {
     display: flex;
     flex-direction: column;
+    & > h2 {
+      margin: 1rem;
+    }
+    & > span {
+      margin: 1rem;
+    }
   }
-  h2,
-  span {
-    margin: 1rem;
-  }
+
   @media screen and (min-width: 1000px) {
     flex-direction: row;
     .gatsby-image-wrapper {
       width: 50%;
     }
   }
+`;
+const StackItem = styled.span`
+  background: ${props => props.theme.primaryDark};
+  color: ${props => props.theme.primaryLight};
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin: 10px 3px;
 `;
 
 const Work = props => {
@@ -38,7 +48,11 @@ const Work = props => {
         <span>
           {desc}
           <br />
-          <b>{stack}</b>
+          <b>
+            {stack.split(',').map(stackItem => (
+              <StackItem>{stackItem}</StackItem>
+            ))}
+          </b>
         </span>
         <ButtonsContainer
           css={`
