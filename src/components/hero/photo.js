@@ -16,14 +16,18 @@ const Photo = () => (
         photo: file(relativePath: { eq: "me.jpg" }) {
           childImageSharp {
             fixed(width: 220, height: 220) {
-              ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed_withWebp_noBase64
             }
           }
         }
       }
     `}
     render={data => (
-      <StyledImg alt="me" fixed={data.photo.childImageSharp.fixed} />
+      <StyledImg
+        alt="me"
+        fixed={data.photo.childImageSharp.fixed}
+        loading="eager"
+      />
     )}
   />
 );

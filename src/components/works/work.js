@@ -46,11 +46,11 @@ const Work = props => {
       <div>
         <h2>{name}</h2>
         <span>
-          {desc}
+          {desc ? desc : null}
           <br />
           <b>
             {stack.split(',').map(stackItem => (
-              <StackItem>{stackItem}</StackItem>
+              <StackItem key={stackItem}>{stackItem}</StackItem>
             ))}
           </b>
         </span>
@@ -59,8 +59,12 @@ const Work = props => {
             margin: 1rem;
           `}
         >
-          <ButtonLink href={githubLink}>GitHub</ButtonLink>
-          <ButtonLink href={projectLink}>Open</ButtonLink>
+          {githubLink ? (
+            <ButtonLink href={githubLink}>GitHub</ButtonLink>
+          ) : null}
+          {projectLink ? (
+            <ButtonLink href={projectLink}>Open</ButtonLink>
+          ) : null}
         </ButtonsContainer>
       </div>
     </Container>

@@ -19,17 +19,16 @@ const SkillsContainer = () => (
     <h2>Языки:</h2>
     <Container>
       {skills.languages.map(skill => (
-        <Skill contents={skill} />
+        <Skill contents={skill} key={skill.name} />
       ))}
     </Container>
     <h2>Технологии:</h2>
     <Container>
-      {skills.technologies.map( skill => (
-        <Skill contents={skill} />
+      {skills.technologies.map(skill => (
+        <Skill contents={skill} key={skill.name} />
       ))}
     </Container>
   </>
 );
 
 export default SkillsContainer;
-// export default Container;

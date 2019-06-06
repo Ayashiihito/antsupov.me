@@ -7,7 +7,7 @@ const WorksContainer = () => (
   <>
     <h2>Работы:</h2>
     {works.map(work => (
-      <Work contents={work} />
+      <Work contents={work} key={work.name} />
     ))}
   </>
 );
