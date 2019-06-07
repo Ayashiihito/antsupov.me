@@ -60,12 +60,20 @@ const Work = props => {
           `}
         >
           {githubLink ? (
-            <ButtonLink href={githubLink} target="_blank">
+            <ButtonLink
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </ButtonLink>
           ) : null}
           {projectLink ? (
-            <ButtonLink href={projectLink} target="_blank">
+            <ButtonLink
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Open
             </ButtonLink>
           ) : null}

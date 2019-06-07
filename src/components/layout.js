@@ -65,7 +65,11 @@ const Layout = ({ children }) => (
               <h3>Связаться со мной:</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/Ayashiihito" target="_blank">
+                  <a
+                    href="https://github.com/Ayashiihito"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
                 </li>
