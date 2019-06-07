@@ -16,7 +16,7 @@ const Photo = () => (
         photo: file(relativePath: { eq: "me.jpg" }) {
           childImageSharp {
             fixed(width: 220, height: 220) {
-              ...GatsbyImageSharpFixed_withWebp_noBase64
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
             }
           }
         }

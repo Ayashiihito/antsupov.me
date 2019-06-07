@@ -7,7 +7,7 @@ const imagesQuery = graphql`
   fragment fluidImage on File {
     childImageSharp {
       fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid_withWebp_noBase64
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
