@@ -60,10 +60,14 @@ const Work = props => {
           `}
         >
           {githubLink ? (
-            <ButtonLink href={githubLink}>GitHub</ButtonLink>
+            <ButtonLink href={githubLink} target="_blank">
+              GitHub
+            </ButtonLink>
           ) : null}
           {projectLink ? (
-            <ButtonLink href={projectLink}>Open</ButtonLink>
+            <ButtonLink href={projectLink} target="_blank">
+              Open
+            </ButtonLink>
           ) : null}
         </ButtonsContainer>
       </div>

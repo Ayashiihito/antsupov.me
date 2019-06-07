@@ -36,7 +36,9 @@ const Hero = () => (
         и актуальными технологиями.
       </Text>
       <ButtonsContainer>
-        <ButtonLink href="https://github.com/Ayashiihito">GitHub</ButtonLink>
+        <ButtonLink href="https://github.com/Ayashiihito" target="_blank">
+          GitHub
+        </ButtonLink>
         <ButtonLink href="mailto:antsupov.dev@gmail.com">Email</ButtonLink>
       </ButtonsContainer>
     </Bio>

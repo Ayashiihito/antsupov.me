@@ -65,10 +65,14 @@ const Layout = ({ children }) => (
               <h3>Связаться со мной:</h3>
               <ul>
                 <li>
-                  <a href="https://github.com/Ayashiihito">GitHub</a>
+                  <a href="https://github.com/Ayashiihito" target="_blank">
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <a href="mailto:antsupov.dev@gmail.com">antsupov.dev@gmail.com</a>
+                  <a href="mailto:antsupov.dev@gmail.com">
+                    antsupov.dev@gmail.com
+                  </a>
                 </li>
               </ul>
             </FooterContainer>
