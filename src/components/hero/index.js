@@ -43,8 +43,7 @@ const Hero = () => (
         >
           GitHub
         </ButtonLink>
-        <ButtonLink href="https://twitter.com/antsupov_v" target="_blank"
-          rel="noopener noreferrer">Twitter</ButtonLink>
+        <ButtonLink href="mailto:antsupov.dev@gmail.com">Email</ButtonLink>
       </ButtonsContainer>
     </Bio>
   </Container>

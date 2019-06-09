@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+// Something has to be done about those static queries, they look out of place here
 const imagesQuery = graphql`
   fragment fluidImage on File {
     childImageSharp {
@@ -21,7 +22,6 @@ const imagesQuery = graphql`
     }
   }
 `;
-
 const withImage = imgName => (
   <StaticQuery
     query={imagesQuery}
@@ -34,7 +34,7 @@ const withImage = imgName => (
     )}
   />
 );
-
+ 
 const works = [
   {
     name: 'Калькулятор расходов',
@@ -47,7 +47,7 @@ const works = [
   {
     name: 'Мои старые проекты\\Архив',
     githubLink: null,
-    projectLink: '/archive',
+    projectLink: 'https://archived-projects.netlify.com/',
     desc: 'Нерелевантные проекты которые я сделал когда-то давно',
     stack: 'p5.js',
     img: withImage('archive'),

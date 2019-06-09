@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import ButtonLink, { GatsbyLink } from '../common/buttonLink';
+import ButtonLink from '../common/buttonLink';
 import ButtonsContainer from '../common/buttonsContainer';
 
 const Container = styled.div`
@@ -49,13 +49,9 @@ const Work = props => {
           {desc ? desc : null}
           <br />
           <b>
-            {stack
-              ? stack
-                  .split(',')
-                  .map(stackItem => (
-                    <StackItem key={stackItem}>{stackItem}</StackItem>
-                  ))
-              : null}
+            {stack.split(',').map(stackItem => (
+              <StackItem key={stackItem}>{stackItem}</StackItem>
+            ))}
           </b>
         </span>
         <ButtonsContainer
@@ -73,17 +69,13 @@ const Work = props => {
             </ButtonLink>
           ) : null}
           {projectLink ? (
-            projectLink[0] === '/' ? (
-              <GatsbyLink to={projectLink}>Open</GatsbyLink>
-            ) : (
-              <ButtonLink
-                href={projectLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open
-              </ButtonLink>
-            )
+            <ButtonLink
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open
+            </ButtonLink>
           ) : null}
         </ButtonsContainer>
       </div>

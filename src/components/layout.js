@@ -6,7 +6,7 @@ import styled, {
 } from 'styled-components/macro';
 
 import theme from '../theme';
-import Header from './header.js';
+
 const GlobalStyle = createGlobalStyle`
   body {
     background: ${props => props.theme.secondaryLight};;
@@ -57,13 +57,12 @@ const Layout = ({ children }) => (
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
-          <Header />
           <SiteContainer>
             <main>{children}</main>
           </SiteContainer>
           <Footer>
             <FooterContainer>
-              <h3 id="contacts">Связаться со мной:</h3>
+              <h3>Связаться со мной:</h3>
               <ul>
                 <li>
                   <a
@@ -72,15 +71,6 @@ const Layout = ({ children }) => (
                     rel="noopener noreferrer"
                   >
                     GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/antsupov_v"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Twitter
                   </a>
                 </li>
                 <li>
