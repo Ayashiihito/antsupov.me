@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Skill from './skill';
-import skills from './skills';
+import skills from '../data/skills';
 
 const Container = styled.div`
   display: flex;
