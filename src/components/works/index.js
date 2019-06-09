@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Work from './work';
-import works from './works';
+import works from '../data/works';
 
 const WorksContainer = () => (
   <>
