@@ -16,15 +16,19 @@ const HeaderLink = styled(Link)`
 const Header = () => (
   <div
     css={`
+      position: absolute;
+      left: 0;
       width: 100%;
-      height: 100%;
+      height: 3rem;
       display: flex;
       justify-content: flex-end;
       align-items: center;
     `}
   >
     <HeaderLink to="/">Home</HeaderLink>
-    <HeaderLink to="#contacts">Контакты</HeaderLink>
+    <HeaderLink as="a" href="#contacts">
+      Контакты
+    </HeaderLink>
   </div>
 );
 
