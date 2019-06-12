@@ -44,14 +44,15 @@ const works = [
     stack: 'react, redux, material-ui, node, express, mongoose',
     img: withImage('expensesApp'),
   },
-  {
-    name: 'Мои старые проекты\\Архив',
-    githubLink: null,
-    projectLink: '/archive',
-    desc: 'Нерелевантные проекты которые я сделал когда-то давно',
-    stack: 'p5.js',
-    img: withImage('archive'),
-  },
+  // Those are hosted on netlify and blocked in Russia, the sadness...
+  // {
+  //   name: 'Мои старые проекты\\Архив',
+  //   githubLink: null,
+  //   projectLink: '/archive',
+  //   desc: 'Нерелевантные проекты которые я сделал когда-то давно',
+  //   stack: 'p5.js',
+  //   img: withImage('archive'),
+  // },
 ];
 
 export default works;
