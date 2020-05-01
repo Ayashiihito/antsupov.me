@@ -25,7 +25,8 @@
     "styled-components": "^4.2.1",
     "typography": "^0.16.19",
     "typography-theme-moraga": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
@@ -37,6 +38,9 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  }
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
