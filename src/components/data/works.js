@@ -15,10 +15,6 @@ const imagesQuery = graphql`
     expensesApp: file(relativePath: { eq: "works/expenses-app.png" }) {
       ...fluidImage
     }
-
-    archive: file(relativePath: { eq: "works/archive.png" }) {
-      ...fluidImage
-    }
   }
 `;
 
@@ -39,20 +35,10 @@ const works = [
   {
     name: 'Калькулятор расходов',
     githubLink: 'https://github.com/Ayashiihito/mern-expenses-app',
-    projectLink: 'http://mern-expenses-calc.herokuapp.com',
     desc: 'Простой калькулятор расходов в стиле material.',
     stack: 'react, redux, material-ui, node, express, mongoose',
     img: withImage('expensesApp'),
   },
-  // Those are hosted on netlify and blocked in Russia, the sadness...
-  // {
-  //   name: 'Мои старые проекты\\Архив',
-  //   githubLink: null,
-  //   projectLink: '/archive',
-  //   desc: 'Нерелевантные проекты которые я сделал когда-то давно',
-  //   stack: 'p5.js',
-  //   img: withImage('archive'),
-  // },
 ];
 
 export default works;

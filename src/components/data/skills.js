@@ -126,7 +126,19 @@ const technologies = [
         />
       </svg>
     ),
-  },
+  },{
+  name: 'Styled-Components',
+  icon: 
+  <span css={`
+    font-size: 40px;
+    text-align: center;
+    width: 7rem;
+    height: 7rem;
+    `}>
+    &lt;💅&gt;
+  </span>
+  ,
+},
   {
     name: 'Node',
     icon: (

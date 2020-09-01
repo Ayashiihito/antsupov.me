@@ -14,7 +14,10 @@ const IndexPage = () => (
       keywords={[`Web Developer`, `react`, `full-stuck`]}
     />
     <Hero />
-    <Skills />
+    {/*Who knew it would be such a pain maintaing a list of tech you've got your hands on /s
+    those frameworks are endless...
+    */}
+    {/* <Skills /> */}
     <Works />
   </Layout>
 );
