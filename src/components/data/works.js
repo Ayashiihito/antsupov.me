@@ -33,9 +33,9 @@ const withImage = imgName => (
 
 const works = [
   {
-    name: 'Калькулятор расходов',
+    name: 'Spending Calculator',
     githubLink: 'https://github.com/Ayashiihito/mern-expenses-app',
-    desc: 'Простой калькулятор расходов в стиле material.',
+    desc: 'Simplistic spending calculator based on Material-UI',
     stack: 'react, redux, material-ui, node, express, mongoose',
     img: withImage('expensesApp'),
   },

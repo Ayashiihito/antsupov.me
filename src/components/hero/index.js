@@ -29,11 +29,12 @@ const Hero = () => (
   <Container>
     <Photo />
     <Bio>
-      <Header>Привет</Header>
+      <Header>Hi</Header>
       <Text>
-        Меня зовут Владимир, я обожаю программирование, мой приоритет &#8212;
-        web&#8209;разработка. Я слежу за разработкой новых web&#8209;стандартов
-        и актуальными технологиями.
+        My name is Vladimir, <br></br>
+        I'm passionate about web&#8209;development and <br></br>
+        I watch development of new web&#8209;standards 
+        and technologies closely.
       </Text>
       <ButtonsContainer>
         <ButtonLink

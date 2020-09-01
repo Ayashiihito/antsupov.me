@@ -6,7 +6,6 @@ import styled, {
 } from 'styled-components/macro';
 
 import theme from '../theme';
-import Header from './header.js';
 const GlobalStyle = createGlobalStyle`
   body {
     background: ${props => props.theme.secondaryLight};;
@@ -57,13 +56,12 @@ const Layout = ({ children }) => (
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
-          <Header />
           <SiteContainer>
             <main>{children}</main>
           </SiteContainer>
           <Footer>
             <FooterContainer>
-              <h3 id="contacts">Связаться со мной:</h3>
+              <h3 id="contacts">Contact me:</h3>
               <ul>
                 <li>
                   <a
