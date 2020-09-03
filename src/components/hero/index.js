@@ -32,9 +32,8 @@ const Hero = () => (
       <Header>Hi</Header>
       <Text>
         My name is Vladimir, <br></br>
-        I'm passionate about web&#8209;development and <br></br>
-        I watch development of new web&#8209;standards 
-        and technologies closely.
+        I am passionate about web&#8209;development and <br></br>
+        always trying to be up to date with new web&#8209;standards and technologies
       </Text>
       <ButtonsContainer>
         <ButtonLink
