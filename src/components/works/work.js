@@ -11,7 +11,7 @@ const Container = styled.div`
   border-radius: 20px;
   box-shadow: ${props => props.theme.shadow};
   overflow: hidden;
-  margin: 1rem 0;
+  margin-bottom: 1.56rem;
   & > div {
     display: flex;
     flex-direction: column;
@@ -61,14 +61,12 @@ const Work = props => {
         <ButtonsContainer
           css={`
             margin: 1rem;
-          `}
-        >
+          `}>
           {githubLink ? (
             <ButtonLink
               href={githubLink}
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               GitHub
             </ButtonLink>
           ) : null}
@@ -79,8 +77,7 @@ const Work = props => {
               <ButtonLink
                 href={projectLink}
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 Open
               </ButtonLink>
             )

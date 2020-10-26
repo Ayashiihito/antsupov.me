@@ -17,7 +17,7 @@ const Container = styled.div`
 `;
 
 const Bio = styled.div`
-  margin: 2rem;
+  margin: 1.56rem;
 `;
 const Header = styled.h1`
   color: black;
@@ -31,20 +31,24 @@ const Hero = () => (
     <Bio>
       <Header>Hi</Header>
       <Text>
-        My name is Vladimir, <br></br>
-        I am passionate about web&#8209;development and <br></br>
-        always trying to be up to date with new web&#8209;standards and technologies
+        My name is Vladimir, <br />I am passionate about web&#8209;development
+        and <br />
+        always trying to be up to date with new web&#8209;standards and
+        technologies
       </Text>
       <ButtonsContainer>
         <ButtonLink
           href="https://github.com/Ayashiihito"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           GitHub
         </ButtonLink>
-        <ButtonLink href="https://twitter.com/antsupov_v" target="_blank"
-          rel="noopener noreferrer">Twitter</ButtonLink>
+        <ButtonLink
+          href="https://twitter.com/antsupov_v"
+          target="_blank"
+          rel="noopener noreferrer">
+          Twitter
+        </ButtonLink>
       </ButtonsContainer>
     </Bio>
   </Container>
